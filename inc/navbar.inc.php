@@ -4,7 +4,7 @@
         <!-- Lien vers Accueil -->
         <!-- Logo -->
         <div class="logo">
-            <img href="<?php echo BASE_URL; ?>asset/img/logo.svg" alt="Logo de mon site">
+            <img src="asset/img/logo.svg" alt="Logo de mon site">
         </div>
 
         <!-- Liens de navigation -->

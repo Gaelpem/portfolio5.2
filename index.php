@@ -1,8 +1,8 @@
 <?php
 session_start(); 
+require_once 'inc/header.php'
 ?>
 
-<?php  require_once 'inc/header.php'?>
     <title>Gaël Pembele</title>
 
 </head>

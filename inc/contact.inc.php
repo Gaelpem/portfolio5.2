@@ -1,63 +1,59 @@
 <?php
-
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-include 'config/database.php'; 
-require_once 'config/formulaire.php'; 
+include 'config/database.php';
+require_once 'config/formulaire.php';
 
-if(isset($_SESSION['admin_user'])){
-    header('location: admin/index.php');    
-    exit; 
+if (isset($_SESSION['admin_user'])) {
+    header('location: admin/index.php');
+    exit;
 }
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    if(!empty($_POST["user_nom"]) && !empty($_POST["user_email"]) && !empty($_POST["user_message"])){
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (!empty($_POST["user_nom"]) && !empty($_POST["user_email"]) && !empty($_POST["user_message"])) {
         // Récupération et sécurisation des données
         $user_nom = htmlspecialchars(trim($_POST["user_nom"]));
-        $user_email = htmlspecialchars(trim($_POST["user_email"]));  
+        $user_email = htmlspecialchars(trim($_POST["user_email"]));
         $user_message = htmlspecialchars(trim($_POST["user_message"]));
 
-        try {   
+        try {
             // Création de l'instance Formulaire (si cette classe existe et est utile)
             $formulaire = new Formulaire([
-                "user_nom" => $user_nom, 
+                "user_nom" => $user_nom,
                 "user_email" => $user_email,
                 "user_message" => $user_message
-            ]); 
+            ]);
 
-            // Connexion à la base de données (Assure-toi que $pdo est bien dans config.php)
-            global $pdo;
+            // Connexion à la base de données 
+          
 
             // Requête SQL corrigée
             $sql = "INSERT INTO utilisateur (user_nom, user_email, user_message) VALUES (:user_nom, :user_email, :user_message)";
-            
+
             // Préparation et exécution de la requête
-            $stmt = $pdo->prepare($sql); 
+            $stmt = $pdo->prepare($sql);
             $stmt->execute([
                 "user_nom" => $user_nom,
                 "user_email" => $user_email,
                 "user_message" => $user_message,
-            ]); 
+            ]);
 
             // Stockage des valeurs de l'utilisateur dans la session
-            $_SESSION['user_nom'] = $user_nom; 
-            $_SESSION['user_email'] = $user_email; 
-            $_SESSION['user_message'] = $user_message; 
+            $_SESSION['user_nom'] = $user_nom;
+            $_SESSION['user_email'] = $user_email;
+            $_SESSION['user_message'] = $user_message;
 
-            echo 'Utilisateur ajouté avec succès'; 
+            // Redirection avant tout contenu HTML
+           
 
-               header('location: index.php'); // Redirection 
-            exit; 
-
-        } catch(Exception $e) {
-            echo 'Erreur : ' . $e->getMessage(); 
+        } catch (Exception $e) {
+            echo 'Erreur : ' . $e->getMessage();
         }
 
     } else {
-        echo "Tous les champs doivent être remplis"; 
+        echo "Tous les champs doivent être remplis";
     }
 }
 ?>

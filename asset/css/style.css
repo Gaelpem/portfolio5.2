@@ -163,9 +163,10 @@ section h1:before{
    /*border: 1px solid yellow;*/
 }
 .paragraphe1{
+
     margin-left: 2rem;
     padding-right: 1rem;
-    font-size: 3rem;
+    font-size:3rem;
     color:rgb(4, 4, 4); 
     /*border: 1px solid black;*/
     border-right: 2px solid rgba(0, 0, 0, 0.15);
@@ -619,6 +620,7 @@ flex-direction: column;
 
 #heure{
    position: absolute; 
+   position: fixed;
    padding-left: 0.5rem;
    bottom: -220rem;
    width: 100%;
@@ -796,11 +798,7 @@ footer .social-lieu-copyright .social{
        display: none;
     }
 
-    .paragraphe1 {
-       /* S'étend sur toute la largeur */
-      font-size: 3rem;
-    }
-
+ 
     .home-container {
         margin-top: 16rem;
         margin-left: -0.2rem;
@@ -809,60 +807,17 @@ footer .social-lieu-copyright .social{
 }
 
 /* @media query pour mobiles */
-@media screen and (max-width: 1200px) {
-    .paragraphe1 {
-      font-size: 2.5rem;
-      padding: 1.8rem;
-    }
-  }
+
   @media screen and (max-width: 1024px) {
-    .paragraphe1 {
-      font-size: 2rem;
-      padding: 1.5rem;
-    }
+    
     .detail{
         display: none;
         }
     
   }
-  @media screen and (max-width: 768px) {
-.home-container{
-    flex-direction: column;
-
-}
-    .paragraphe1{
-      font-size: 1.5rem;
-      padding: 1.2rem;
-    }
-    
-  }
-  @media screen and (max-width: 640px) {
-    .paragraphe1 {
-      font-size: 1.2rem;
-      padding: 1rem;
-    }
-  }
-
-
-  @media screen and (max-width: 480px) {
-    .paragraphe1 {
-      font-size: 2rem;
-      padding: 0.5rem;
-    }
-
-
-
-@media screen and (max-width: 350px){
-    .paragraphe1{
-        font-size: 2rem;
-        padding: 0.5rem;
-    }
-   
-  }
-
-
-  }
   
+
+
 
 
 
@@ -870,76 +825,127 @@ footer .social-lieu-copyright .social{
 @media (max-width: 980px) {
 
     /* Section Header */
- 
+    main{
+        min-height: 20vh;
+    }
+    section{
+        margin-bottom:10rem;
+    }
     section h1::after,
     section h1::before {
         display: none;
     }
-
-    /* Responsive Projet & Propos Containers */
-    .portfolio-section .projet-container,
-    .portfolio-section .propos-container .grid {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #separateur1,#separateur2{
-       flex-direction: column;
-    }
-
-    .grid {
-        margin:0 auto; 
-        width: 50%;
-    }
-
-    /* CV Section */
-    .cv {
-        margin-top: 2rem;
-        margin-left: 0;
-    }
-
-    .cv li a {
-        font-size: 1rem;
-    }
-
-    /* Contact Container */
-
-    .contact h2{
-        font-size: 4rem;
-        margin-left: 0;
-    }
-
-    .contact h2::after,
-    .contact h2::before {
-        display: none;
-    }
-
-    /* Contact Mini Section */
-    .contact-mini {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .contact-mini p,
-    .contact-mini form {
-        margin-left: 0;
-    }
-
-    .contact-mini p {
-        width: 85%;
-    }
-
-    .contact-mini form {
-        margin-top:35px;
-    }
-
-    .reseau{
-        margin-top:-64px;
-        display: flex;
-        flex-direction: column;
-    }
-
+    
 }
 
 
+
+
+
+/* Media queries pour la responsivité */
+@media screen and (max-width: 1200px) {
+    .grid {
+        margin-left: 15rem;
+        max-width: 80%;
+        grid-template-columns: repeat(2, 300px);
+        column-gap: 40px;
+    }
+    
+    .paragraphe {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .grid {
+        margin-left: 5rem;
+        max-width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .paragraphe {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .skills-grid {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: calc(100% - 2rem);
+        max-width: 100%;
+    }
+
+    .paragraphe {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .skills-grid {
+        width: 80%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .skills {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    .groupe .web {
+        font-size: 1.1rem;
+    }
+
+    .containe-competence .competence {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .paragraphe1 {
+        font-size: 2.5rem;
+        width: 60%;
+    }
+}
+
+/* Responsive design pour les tablettes */
+@media screen and (max-width: 768px) {
+    .paragraphe1 {
+        font-size: 2rem;
+        width: 70%;
+        margin-left: 1.5rem;
+    }
+}
+
+/* Responsive design pour les mobiles */
+@media screen and (max-width: 480px) {
+    .paragraphe1 {
+        font-size: 1.5rem;
+        width: 85%;
+        margin-left: 1rem;
+        padding-right: 0.5rem;
+    }
+}

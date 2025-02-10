@@ -10,7 +10,6 @@ if (!isset($_SESSION['admin_nom'])) {
 require_once '../config/database.php';
 
 
-
 if(isset($_GET['id_2'])){
      $id_projet = (int)$_GET['id_2'] ; 
 

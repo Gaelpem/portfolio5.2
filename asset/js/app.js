@@ -123,3 +123,50 @@ setTimeout(afficherHeure, 1000)
 }
 
 afficherHeure()
+
+
+
+// Dark mode
+
+const corp = document.getElementsByTagName('body')[0];
+const navLinkss = document.querySelector('.nav-links');
+const para = document.querySelector('.paragraphe1');
+const titrePortfolio =  document.querySelector('.titre-portfolio');
+const titres = document.querySelectorAll('section h1')
+const basPage = document.getElementsByTagName('footer')
+const paragraphes = document.querySelectorAll('p.paragraphe')
+
+
+const btnMode = document.getElementById('btn-mode');
+
+btnMode.addEventListener('click', () => {
+    corp.classList.toggle('nuit');
+    navLinkss.classList.toggle('nuit');
+    para.classList.toggle('nuit'); 
+    titrePortfolio.classList.toggle('nuit'); 
+    btnMode.classList.toggle('light');
+    
+       paragraphes.forEach(paragraphe => {
+        paragraphe.classList.toggle('nuit');
+    });
+
+    for( let i = 0; i<titres.length ; i++){
+        titres[i].classList.toggle('nuit')
+    }
+
+
+    for( let j = 0; j<basPage.length ; i++){
+        basPage[i].classList.toggle('nuit')
+    }
+
+
+
+
+    const lightOn = btnMode.classList.contains('light');
+    if (lightOn) {
+        btnMode.textContent = "––nuit";
+    } else {
+        btnMode.textContent = "––jour";
+    }
+});
+

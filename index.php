@@ -13,8 +13,10 @@ require_once 'inc/header.php'
  <!-- Presentation-->
 
 <main>
+<span id="btn-mode" class="btn-class">––nuit</span>
 
 <section class="portfolio-section home">
+
 
     <div class="home-container">
     <p class="paragraphe1" id="accueil-menu">
@@ -22,11 +24,12 @@ require_once 'inc/header.php'
 <span class="detail">&copy2025 <br>
     basé à Paris/
 </span></p>
+
     <ul class="link-contact">
         <li class="bouton"><a href="#contact-menu" >.contactez-moi</a></li>
      </ul>
     <div class="titre-portfolio1">
-    <h2 class="titre-portfolio">PORTFOLIO&copy;</span></h2>
+    <h2 class="titre-portfolio">PORTFOLIO©</h2>
     </div>
     </div> 
    

@@ -99,6 +99,12 @@ header{
     display: none;
     cursor: pointer;
 }
+
+
+
+
+
+
 main{
 
 display: flex;
@@ -266,9 +272,9 @@ section h1:before{
   .portfolio-section .projet-container #photos{
     border-top:  1px solid rgba(0, 0, 0, 0.27);
     border-bottom: 0.5px solid   rgba(0, 0, 0, 0.27); 
-    width:100%; 
+    max-width:100%; 
     padding: 2rem 0;
-    max-width: 1200px;
+
     cursor: pointer;
     position: relative;
    
@@ -277,9 +283,8 @@ section h1:before{
   .portfolio-section .projet-container #biographie{
     border-top:  0.5px solid  rgba(0, 0, 0, 0.27);
     border-bottom: 1px solid  rgba(0, 0, 0, 0.27); 
-    width:100%;
     padding: 2rem 0; 
-    max-width: 1200px;
+    max-width:100%; 
     cursor: pointer;
     position: relative;
   }
@@ -582,7 +587,7 @@ td{
 }
 
 .links-block{
-    margin-top: 3.5rem;
+margin-top: 3.5rem;
 display: flex;
 justify-content:left; 
 flex-direction: column;
@@ -592,6 +597,8 @@ flex-direction: column;
     list-style: none;
     position: relative;
 }
+
+
 
  /*links-block li::before{
     position:absolute; 
@@ -620,10 +627,8 @@ flex-direction: column;
 
 #heure{
    position: absolute; 
-   position: fixed;
    padding-left: 0.5rem;
    bottom: -220rem;
-   width: 100%;
    margin: 0 ;
    left: 62rem;
    font-size: 5rem;
@@ -731,17 +736,6 @@ footer .social-lieu-copyright .social{
 
 /*------------- RESPONSIVE --------------*/
 
-
-
-
-@media (max-width:769px){
-
-    #heure{
-        display: none;
-    }
-
-
-}
 @media  (max-width:768px){
    
     .navbar .link-home,
@@ -769,7 +763,7 @@ footer .social-lieu-copyright .social{
 }
 /*---Responsive section h1 ----*/
 
-@media (max-width:768px){
+@media (max-width:830px){
     section h1{
         font-size: 4rem;
     }
@@ -784,8 +778,16 @@ footer .social-lieu-copyright .social{
 
     .portfolio-section .projet-container{
         flex-direction: column;
-
+     
      }
+     #separateur1,#separateur2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+
+
 }
 
 /*--- paragraphe1 et titre ----*/
@@ -797,7 +799,6 @@ footer .social-lieu-copyright .social{
        /* Réduit la taille */
        display: none;
     }
-
  
     .home-container {
         margin-top: 16rem;
@@ -816,11 +817,6 @@ footer .social-lieu-copyright .social{
     
   }
   
-
-
-
-
-
 /*---Responsive section h1 ----*/
 @media (max-width: 980px) {
 
@@ -829,7 +825,7 @@ footer .social-lieu-copyright .social{
         min-height: 20vh;
     }
     section{
-        margin-bottom:10rem;
+        margin-bottom:15rem;
     }
     section h1::after,
     section h1::before {
@@ -837,8 +833,6 @@ footer .social-lieu-copyright .social{
     }
     
 }
-
-
 
 
 
@@ -853,6 +847,10 @@ footer .social-lieu-copyright .social{
     
     .paragraphe {
         width: 300px;
+    }
+
+    #heure{
+        display: none;
     }
 }
 
@@ -875,6 +873,12 @@ footer .social-lieu-copyright .social{
         margin-right: auto;
         justify-content: center;
     }
+    #separateur1,#separateur2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -908,17 +912,15 @@ footer .social-lieu-copyright .social{
     .containe-competence .competence {
         text-align: center;
     }
+
+
+    #separateur1,#separateur2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -948,4 +950,131 @@ footer .social-lieu-copyright .social{
         margin-left: 1rem;
         padding-right: 0.5rem;
     }
+}
+
+
+/* Responsive design pour tablettes */
+@media screen and (max-width: 1024px) {
+    .contact {
+        margin: 0 auto;
+        width: 95%;
+
+    }
+    
+    .contact h2 {
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+
+    .contact-mini p {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .reseau {
+        display: none;
+    }
+    .contact h2::after{
+        display: none;
+    }
+
+}
+
+/* Responsive design pour mobiles */
+@media screen and (max-width: 830px) {
+    .contact {
+        margin: 0 auto;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+
+    .contact-mini {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-mini p {
+    display: none;
+
+    }
+    
+    .reseau {
+        display: none;
+    }
+}
+
+
+/* mode nuit */
+
+.btn-class{ 
+    position: absolute;
+    right: 24rem; 
+    top:4rem;
+    cursor:pointer; 
+    z-index: 20;
+
+}
+
+
+.btn-class.light{
+    position: absolute;
+    right: 24rem; 
+    top:4rem;
+    cursor:pointer; 
+ 
+    z-index: 20;
+}
+
+
+body.nuit{
+background-color:black; 
+color: white;
+}
+
+.paragraphe1.nuit{
+    color: white;
+    border-right: 1px solid rgb(120, 120, 120); 
+}
+
+.nav-links.nuit li a {
+    color: white;
+}
+.home .home-container .titre-portfolio1 .titre-portfolio.nuit{
+  color:white; 
+} 
+h1.nuit{
+    color:white;
+}
+
+h1.nuit::after{
+    content:"";
+    position: absolute;
+   background-color: #ffffff; 
+    width: 15px; 
+    height: 15px;
+    right: -0.4rem;
+    top: 6.5rem;
+}
+h1.nuit::before{
+    content:"";
+    position: absolute;
+    background-color: #ffffff; 
+    width: 100%;
+    height: 1px;
+    top: 8rem;
+    left: 0.5rem;
+
+}
+p.nuit.paragraphe{
+    color:white; 
+}
+
+footer.nuit{
+    color:white; 
+    border-top: white;
 }

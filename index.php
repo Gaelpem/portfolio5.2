@@ -13,27 +13,30 @@ require_once 'inc/header.php'
  <!-- Presentation-->
 
 <main>
-<span id="btn-mode" class="btn-class">––nuit</span>
+<span id="btn-mode" class="btn-class">––jour</span>
 
-<article class="portfolio-section home">
+<section class="portfolio-section home">
 
 
     <div class="home-container">
-    <p class="paragraphe1" id="accueil-menu">
-    Je m’appelle Gaël Pembele je suis développeur passionné par la ––––– technologie le design c'est pourquoi j'ai choisi de combiner ces deux univers.
-    <span class="detail">&copy2025 <br>
-    basé à Paris/
-    </span></p>
+            <p class="paragraphe1" id="accueil-menu">
+            Je m’appelle Gaël Pembele je suis développeur passionné par la ––––– technologie le design c'est pourquoi j'ai choisi de combiner ces deux univers.
+            <span class="detail">&copy2025 <br>
+            basé à Paris/
+            </span></p>
 
-    <ul class="link-contact">
-        <li class="bouton"><a href="#contact-menu" >.contactez-moi</a></li>
-     </ul>
-    <div class="titre-portfolio1">
-    <h2 class="titre-portfolio">PORTFOLIO©</h2>
-    </div>
+            <ul class="link-contact">
+                <li class="bouton"><a href="#contact-menu" >.contactez-moi</a></li>
+            </ul>
+
+          <div class="titre-portfolio1">
+
+            <h2 class="titre-portfolio">PORTFOLIO©</h2>
+
+          </div>
     </div> 
    
-  </article>
+  </section>
 
 
  <!--Projet menu-->
@@ -100,7 +103,7 @@ require_once 'inc/header.php'
                 </div>
             </div>
             <ul class="cv">
-                <li class="bouton2"><a href="asset/cv/Gael_Pembele_CV.pdf" target="_blank">.voir mon cv</a></li>
+                <li class="bouton2"><a href="asset/cv/cvOF.pdf" target="_blank">.voir mon cv</a></li>
       </ul>
         </div>
     </div>

@@ -18,7 +18,9 @@
   
 </main>
 
+
 <?php include "inc/footer.inc.php"?>
+<script src="asset/js/app.js"></script>
 
 </body>
 </html>

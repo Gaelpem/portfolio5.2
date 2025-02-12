@@ -79,8 +79,8 @@ const observer = new IntersectionObserver((entries)=>{
                })
         }else{
             entry.target.animate([
-                {transform : 'translateX(100px) scale(0.8)', opacity: 0},
-                {transform : 'translateX(0) scale(1)', opacity: 1},
+                {transform : 'translateX(100px) ', opacity: 0},
+                {transform : 'translateX(0)', opacity: 1},
                ], {
                 duration : 500
                })
@@ -130,11 +130,26 @@ afficherHeure()
 const body = document.getElementsByTagName('body')[0];
 const liens = document.querySelector('.nav-links');
 const paragraphes = document.querySelectorAll('p');
-const titres = document.querySelectorAll('h1');
-const skills = document.querySelectorAll('p.skills');
+const detail = document.querySelector('.detail');
+const webTitles = document.querySelectorAll('h1');
+const competence = document.querySelector('.competence');
 const lienss  = document.querySelector('.links-block')
 const titre  = document.querySelector('.titre-portfolio')
-const footeR = document.getElementsByTagName('footer');
+const footeR = document.querySelectorAll('footer');
+const grandTitres = document.querySelectorAll('.grand-titre');
+const lieus = document.querySelectorAll('.lieu')
+const droits = document.querySelectorAll('.droit');
+const heures =  document.getElementById('heure'); 
+const logo = document.querySelector('.logo img');
+const fleche1= document.getElementById('fleche1'); 
+const fleche2= document.getElementById('fleche2');
+const borderPhotos = document.getElementById('photos');
+const borderBiographie = document.getElementById('biographie');  
+const skillsTexts = document.querySelectorAll('.web'); 
+const portfolios = document.querySelectorAll('.portfolio');
+const homeLinks = document.querySelectorAll('.home ul li a');
+const cvLinks = document.querySelectorAll('.propos ul li a')
+const boutons = document.querySelectorAll('.bouton, .bouton2');
 const btnMode = document.getElementById('btn-mode');
 
 
@@ -142,31 +157,74 @@ const btnMode = document.getElementById('btn-mode');
 btnMode.addEventListener('click', () => {
     // On ajoute/enlève la classe 'nuit' à tous nos éléments
     body.classList.toggle('nuit');
+
+
+     detail.classList.toggle('nuit'); 
     liens.classList.toggle('nuit');
     lienss.classList.toggle('nuit');
-    titre.classList.toggle('nuit')
-    //les competences
-    skills.forEach(skill => {
-        skill.classList.toggle('nuit');
-    });
+    titre.classList.toggle('nuit');
+     heures.classList.toggle('nuit'); 
+    fleche1.classList.toggle('nuit');
+    fleche2.classList.toggle('nuit');
+    borderPhotos.classList.toggle('nuit');
+    borderBiographie.classList.toggle('nuit');
     
-    // Pour les paragraphes
+    //titre de chaque portfolio
+      portfolios.forEach(portfolio =>{
+        portfolio.classList.toggle('nuit'); 
+      })
+
     paragraphes.forEach(p => {
         p.classList.toggle('nuit'); 
     });
-     // Pour les paragraphes
-     for(let f = 0; f < footeR.length; f++) {
-        footeR[f].classList.toggle('nuit');
-         }
-    // Pour les titres
-    titres.forEach(titre => {
-        titre.classList.toggle('nuit');
-    });
-    //Pour les liens 
-
     
+
+    if (body.classList.contains('nuit')) {
+        logo.src = "asset/img/logoblanc.svg"; // Remplace par le logo en mode nuit
+    } else {
+        logo.src = "asset/img/logo.svg";
+    }
+ 
+    
+    homeLinks.forEach(link => {
+        link.classList.toggle('nuit');
+    });
+
+    cvLinks.forEach(cvLink => {
+        cvLink.classList.toggle('nuit');
+    });
+  
+
+    competence.classList.toggle('nuit');
+    
+    // Pour les titres web
+    webTitles.forEach(title => {
+        title.classList.toggle('nuit');
+    });
+    //bouton
+    boutons.forEach(bouton => {
+        bouton.classList.toggle('nuit');
+    });
+    
+    // Pour les paragraphes de compétences
+    skillsTexts.forEach(skill => {
+        skill.classList.toggle('nuit');
+    });
+      
+
+      // Basculer la classe 'nuit' sur les éléments du footer
+      footeR.forEach(footer => footer.classList.toggle('nuit'));
+      grandTitres.forEach(titre => titre.classList.toggle('nuit'));
+      droits.forEach(droit => droit.classList.toggle('nuit'));
+      lieus.forEach(lieu => lieu.classList.toggle('nuit'));
+     
+      
+
+
+
+
     // Change le texte du bouton
-    if(body.classList.contains('nuit')) {
+    if(body.classList.contains('nuit')) {   
         btnMode.textContent = "––nuit";
     } else {
         btnMode.textContent = "––jour";

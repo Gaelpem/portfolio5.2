@@ -96,6 +96,14 @@ header{
 }
 
 
+.nuit.navbar.logo {
+    width: 5%;
+}
+
+.nuit.navbar.logo img {
+    width: 100%;
+}
+
 .navbar .burger-menu-button{
     font-size:1.7rem; 
     display: none;
@@ -440,14 +448,12 @@ margin-left: 30rem;
 
 .contact{
     padding-top: 2rem;
-    max-width:90%;
+    max-width:96%;
     min-height:70vh;
 /*background-color: var(--bgc-principal);*/
     border-radius: var(--border-radius);
     background-color:rgba(0, 0, 0, 0.373);
-
-
-
+     flex-wrap: wrap;
 }
 
 
@@ -461,7 +467,7 @@ margin-left: 30rem;
     content:""; 
     position: absolute;
     background-color:#ffffff;
-    width: 100%;
+    width: 98%;
     height:1px;
     top: 8rem;
     left: 1rem;
@@ -616,7 +622,7 @@ flex-direction: column;
         border-left:1px solid black; 
         padding: 10px 0 10px 8px;
         margin: 0;
-        width: 400px;
+        width: 450px;
     }
 
 
@@ -1026,7 +1032,7 @@ footer .social-lieu-copyright .social{
 
 
     body.nuit{
-    background-color:black; 
+    background-color:rgba(0, 0, 0, 0.729); 
     color: white;
     }
 
@@ -1040,7 +1046,8 @@ footer .social-lieu-copyright .social{
 
     .paragraphe1.nuit{
         color: white;
-        border-right: 1px solid rgb(120, 120, 120); 
+        border-right: 2px solid rgb(120, 120, 120); 
+        padding-right: 1rem;
     }
 
     .nav-links.nuit li a {
@@ -1049,10 +1056,11 @@ footer .social-lieu-copyright .social{
     .home .home-container .titre-portfolio1 .titre-portfolio.nuit{
     color:white; 
     } 
-    h1.nuit{
-        color:white;
-    }
 
+    h1.nuit{
+        color:white; 
+    }
+  
     h1.nuit::after{
         content:"";
         position: absolute;
@@ -1074,21 +1082,102 @@ footer .social-lieu-copyright .social{
     }
     p.nuit.paragraphe{
         color:white; 
+        border-top: 0.5px solid rgb(255, 255, 255);
     }
 
-    footer.nuit{
-        color:white; 
-        border-top:0.5px solid white;
+
+    .social-lieu-copyright.nuit {
+        color: white;
     }
-   
+
+
     .links-block.nuit li a {
         color: white;
     }
-   p .skills.nuit{
+
+   .detail.nuit {
+    color: rgba(230, 230, 230, 0.657);
+}
+
+
+.competence.nuit{
     color: white;
-   }
+}
+
+/* Pour les paragraphes de compétences */
+
+/* Si nécessaire, pour le conteneur */
+.paragraphe.nuit {
+    color: white;
+}
+.groupe p.nuit {
+    color: white;
+}
+
+footer.nuit{
+    border-top: 0.5px solid white;
+}
 
 
+.nuit .grand-titre {
+    color: white; 
+}
+.nuit .lieu{
+    color: white;
+}
+
+.nuit .droit {
+    color: white; /* Texte du copyright en blanc en mode nuit */
+}
+
+.nuit .social li a {
+    color: white; /* Liens sociaux en blanc en mode nuit */
+}
+
+
+#heure.nuit{
+    border-left: 0.5px solid white;
+}
+
+.web.nuit{
+    color: white;
+}
+
+
+#fleche1.nuit,#fleche2.nuit{
+    color: white;
+}
+.portfolio.nuit a{
+    color:white; 
+}
+
+.portfolio-section .projet-container #photos.nuit{
+    border-top: 0.5px solid white;
+}
+.portfolio-section .projet-container #biographie.nuit{
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+ 
+}
+
+.home ul li a.nuit {
+    color: rgb(255, 255, 255);
+}
+
+.propos ul li a.nuit{
+    color: rgb(255, 255, 255);
+}
+.bouton.nuit, .bouton2.nuit {
+    border: 1px solid white;
+}
+
+.bouton.nuit::after, .bouton2.nuit::after {
+    background-color: white;
+}
+
+.bouton.nuit:hover a, .bouton2.nuit:hover a {
+    color: black;
+}
 
 /* responsive-bouton */
 

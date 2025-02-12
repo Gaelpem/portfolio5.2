@@ -28,8 +28,6 @@ $stmt->execute();
 $projets = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 ?>
 
-<?php require_once "../inc/header.php"?>
-<?php require_once "../inc/navbar.inc.php"?>
 
 <title>Document</title>
 </head>
@@ -86,6 +84,6 @@ $projets = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </form>
     </main>
 
-    <?php require_once "../inc/footer.inc.php"?>
+  
 </body>
 </html>

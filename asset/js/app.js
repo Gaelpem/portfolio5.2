@@ -126,47 +126,49 @@ afficherHeure()
 
 
 
-// Dark mode
-
-const corp = document.getElementsByTagName('body')[0];
-const navLinkss = document.querySelector('.nav-links');
-const para = document.querySelector('.paragraphe1');
-const titrePortfolio =  document.querySelector('.titre-portfolio');
-const titres = document.querySelectorAll('section h1')
-const basPage = document.getElementsByTagName('footer')
-const paragraphes = document.querySelectorAll('p.paragraphe')
-
-
+// On récupère les éléments qu'on veut modifier
+const body = document.getElementsByTagName('body')[0];
+const liens = document.querySelector('.nav-links');
+const paragraphes = document.querySelectorAll('p');
+const titres = document.querySelectorAll('h1');
+const skills = document.querySelectorAll('p.skills');
+const lienss  = document.querySelector('.links-block')
+const titre  = document.querySelector('.titre-portfolio')
+const footeR = document.getElementsByTagName('footer');
 const btnMode = document.getElementById('btn-mode');
 
+
+// Quand on clique sur le bouton
 btnMode.addEventListener('click', () => {
-    corp.classList.toggle('nuit');
-    navLinkss.classList.toggle('nuit');
-    para.classList.toggle('nuit'); 
-    titrePortfolio.classList.toggle('nuit'); 
-    btnMode.classList.toggle('light');
-    
-       paragraphes.forEach(paragraphe => {
-        paragraphe.classList.toggle('nuit');
+    // On ajoute/enlève la classe 'nuit' à tous nos éléments
+    body.classList.toggle('nuit');
+    liens.classList.toggle('nuit');
+    lienss.classList.toggle('nuit');
+    titre.classList.toggle('nuit')
+    //les competences
+    skills.forEach(skill => {
+        skill.classList.toggle('nuit');
     });
+    
+    // Pour les paragraphes
+    paragraphes.forEach(p => {
+        p.classList.toggle('nuit'); 
+    });
+     // Pour les paragraphes
+     for(let f = 0; f < footeR.length; f++) {
+        footeR[f].classList.toggle('nuit');
+         }
+    // Pour les titres
+    titres.forEach(titre => {
+        titre.classList.toggle('nuit');
+    });
+    //Pour les liens 
 
-    for( let i = 0; i<titres.length ; i++){
-        titres[i].classList.toggle('nuit')
-    }
-
-
-    for( let j = 0; j<basPage.length ; i++){
-        basPage[i].classList.toggle('nuit')
-    }
-
-
-
-
-    const lightOn = btnMode.classList.contains('light');
-    if (lightOn) {
+    
+    // Change le texte du bouton
+    if(body.classList.contains('nuit')) {
         btnMode.textContent = "––nuit";
     } else {
         btnMode.textContent = "––jour";
     }
 });
-

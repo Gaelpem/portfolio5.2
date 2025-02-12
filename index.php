@@ -15,15 +15,15 @@ require_once 'inc/header.php'
 <main>
 <span id="btn-mode" class="btn-class">––nuit</span>
 
-<section class="portfolio-section home">
+<article class="portfolio-section home">
 
 
     <div class="home-container">
     <p class="paragraphe1" id="accueil-menu">
     Je m’appelle Gaël Pembele je suis développeur passionné par la ––––– technologie le design c'est pourquoi j'ai choisi de combiner ces deux univers.
-<span class="detail">&copy2025 <br>
+    <span class="detail">&copy2025 <br>
     basé à Paris/
-</span></p>
+    </span></p>
 
     <ul class="link-contact">
         <li class="bouton"><a href="#contact-menu" >.contactez-moi</a></li>
@@ -33,7 +33,7 @@ require_once 'inc/header.php'
     </div>
     </div> 
    
-  </section>
+  </article>
 
 
  <!--Projet menu-->

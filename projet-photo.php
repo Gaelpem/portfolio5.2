@@ -10,7 +10,7 @@
     <title>Portfolio-Photo</title>
 </head>
 <body>
-<?php include "asset/inc/navbar.inc.php" ?>
+<?php include "inc/navbar.inc.php" ?>
 
 
 <main class="portfolio-photo">
@@ -18,7 +18,7 @@
   
 </main>
 
-<?php include "asset/inc/footer.inc.php"?>
+<?php include "inc/footer.inc.php"?>
 
 </body>
 </html>

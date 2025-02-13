@@ -1,7 +1,7 @@
 <?php
   session_start();
   require_once '../config/database.php'; 
-
+  $error_message = ""; 
   // Vérification si l'admin est déjà connecté
   if(isset($_SESSION['admin_nom'])){
     header('location: index_admin.php'); 
@@ -38,35 +38,41 @@
               exit; 
 
             } else {
-              echo 'Mot de passe incorrect'; 
+              $error_message = 'Mot de passe incorrect!'; 
             }
         } else {
-          echo "Aucun administrateur trouvé avec cet email."; 
+          $error_message = "Aucun administrateur trouvé avec cet email."; 
         }
 
       } else {
-        echo "Veuillez remplir tous les champs.";
+        $error_message = "Veuillez remplir tous les champs.";
       }
     }
   }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset_admin.php/css/style2.css">
     <title>Connexion Administrateur</title>
 </head>
-<body>
-    <form action="" method="post"> <!-- correction ici, 'methode' à 'method' -->
-        <label for="">Email</label>
+<body class="login">
+    <form class="connexion"action="" method="post"> <!-- correction ici, 'methode' à 'method' -->
+        <label for="">Email:</label>
         <input type="text" name="admin_email" required>
 
-        <label for="">Mot de passe</label>
+        <label for="">Mot de passe:</label>
         <input type="password" name="admin_mdp" required>
 
-        <button type="submit">Connexion</button>
+
+        <?php if(!empty($error_message)): ?>
+            <p class="error-message"><?= htmlspecialchars($error_message) ?></p>
+        <?php endif; ?>
+
+        <button id="bouton"type="submit">Connexion</button>
     </form>
 </body>
 </html>

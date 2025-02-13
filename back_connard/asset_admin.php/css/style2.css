@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  } 
+  header{
+
+    position: relative;
+    padding: 0 3rem;
+   /* margin-top: 1rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    max-width:100%;
+
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ /* border: 1px solid yellow;*/
+  max-width: 1450px;
+  height: 80px;
+  top: 0;
+  z-index: 10;
+}
+li {
+  list-style: none;
+}
+
+
+a{
+   text-decoration: none;
+   color:black;   
+   font-size: 1.4rem;
+   position: relative;
+
+}
+
+.nav-links{
+   display: flex;
+   
+}
+a::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height:1px; 
+  bottom: 0;
+  left: 0;
+  background-color:#000000;
+  transition: width 0.7s;
+}
+.nav-links a:hover::after{
+  width: 100%;
+}
+.nav-links a:hover{
+  transition: translateX(10px); 
+  transition: transform 0.3s ease;
+}
+
+.navbar .logo{
+width: 5%;
+}
+.navbar .logo img{
+  width: 100%;
+}
+main{
+    max-width: 85%;
+    height: 500px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+    
+  
+}
+table,th,td{
+    border: 1px solid rgb(142, 142, 142);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 1.5em;
+}
+td{
+  font-size:1.2rem ;
+}
+h1{
+  color: rgb(48, 48, 48);
+}
+button{
+  background: black;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+
+/*login*/
+
+.login{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+
+}
+
+.connexion{
+  padding: 1.5rem;
+  background-color: rgb(160, 160, 160);
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.connexion label{
+  color: white;
+  padding-top: 0.4rem;
+  font-size: 1.2rem;
+}
+.connexion input{
+  height: 33px;
+  background: none;
+  border:none;
+  border-bottom: 1px solid white;   
+  color: white;
+}
+.connexion input:focus{
+  outline: none;
+  background:none; /* Assure la suppression de l'effet par défaut */
+}
+
+.connexion button{
+  width: 150px;
+  margin-top: 0.5rem;
+  background-color: white;
+  color: rgb(163, 163, 163);
+}
+
+.error-message{
+  color:rgb(40, 40, 40);  
+  margin-top: 0.5rem;
+}

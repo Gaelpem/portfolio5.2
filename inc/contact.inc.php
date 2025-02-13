@@ -6,6 +6,9 @@ if (session_status() == PHP_SESSION_NONE) {
 include 'config/database.php';
 require_once 'config/formulaire.php';
 
+$error_message = ""; // Variable pour stocker le message d'erreur
+$success_message = ""; // Variable pour stocker le message de succès
+
 if (isset($_SESSION['admin_user'])) {
     header('location: admin/index.php');
     exit;
@@ -46,14 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_message'] = $user_message;
 
             // Redirection avant tout contenu HTML
-           
+            $success_message = "Votre message a bien été envoyé !";
 
         } catch (Exception $e) {
-            echo 'Erreur : ' . $e->getMessage();
+            $error_message = 'Erreur : ' . $e->getMessage();
         }
 
     } else {
-        echo "Tous les champs doivent être remplis";
+         $error_message = 'Tous les champs doivent être remplis!';
     }
 }
 ?>
@@ -74,8 +77,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
          <label for="message">Votre message</label>
          <input type="text" name="user_message" id="message" placeholder="Bonjour Gaël...">
+         <?php if (!empty($error_message)): ?>
+                <p class="error-message"><?= htmlspecialchars($error_message) ?></p>
+            <?php endif; ?>
 
-         <button type="button-contact"  type="submit">Envoyez</button>
+            <?php if (!empty($success_message)): ?>
+                <p class="success-message"><?= htmlspecialchars($success_message) ?></p>
+            <?php endif; ?>
+
+         <button type="submit">Envoyez</button>
       </form>
 
       <ul class="reseau">

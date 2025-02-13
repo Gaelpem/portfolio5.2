@@ -65,7 +65,7 @@ require_once 'inc/header.php'
     
 <article id="biographie">
 <i class="fa-solid fa-arrow-down" id="fleche2"></i>
-   <h2 class="portfolio"><a href="">2/ Biographie</a></h2>
+   <h2 class="portfolio"><a href="projet-biographie.php">2/ Biographie</a></h2>
 
       <div id="separateur2">
          <div id="paragraphe2">

@@ -8,6 +8,12 @@
     exit; 
   }
 
+
+// Générer un token CSRF s'il n'existe pas encore
+if (empty($_SESSION['csrf_token'])) {
+  $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
   // Vérification de la soumission
   if($_SERVER['REQUEST_METHOD'] == "POST"){
 
@@ -62,10 +68,14 @@
 <body class="login">
     <form class="connexion"action="" method="post"> <!-- correction ici, 'methode' à 'method' -->
         <label for="">Email:</label>
-        <input type="text" name="admin_email" required>
+        <input type="email" name="admin_email" required>
 
         <label for="">Mot de passe:</label>
         <input type="password" name="admin_mdp" required>
+
+        <!-- Ajout du champ CSRF -->
+        <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
+
 
 
         <?php if(!empty($error_message)): ?>

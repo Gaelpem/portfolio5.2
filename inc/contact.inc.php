@@ -14,12 +14,26 @@ if (isset($_SESSION['admin_user'])) {
     exit;
 }
 
+
+// Générer un token CSRF
+$_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST["user_nom"]) && !empty($_POST["user_email"]) && !empty($_POST["user_message"])) {
         // Récupération et sécurisation des données
         $user_nom = htmlspecialchars(trim($_POST["user_nom"]));
         $user_email = htmlspecialchars(trim($_POST["user_email"]));
         $user_message = htmlspecialchars(trim($_POST["user_message"]));
+          // Vérifications supplémentaires
+          if (!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
+            $error_message = "Veuillez entrer une adresse email valide.";
+        } elseif (strlen($user_nom) > 50 || strlen($user_email) > 100 || strlen($user_message) > 500) {
+            $error_message = "Veuillez respecter la longueur maximale des champs.";
+        } 
+
+
+
+
 
         try {
             // Création de l'instance Formulaire (si cette classe existe et est utile)
@@ -69,6 +83,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        <p>Pour toutes questions, avis, opportunités de stage ou d’alternance, n’hésitez pas à me contacter. Je suis ouvert aux échanges et prêt à discuter avec vous.
        </p>
          <form class= "contact-form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+         <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
+
          <label for="nom">Nom</label>
          <input type="text" name="user_nom" id="nom" placeholder="Paul">
 

@@ -25,7 +25,8 @@ if (isset($_GET['id'])) {
             $sql = "DELETE FROM utilisateur WHERE id_user = :id_user";
             $stmt = $pdo->prepare($sql);
             $stmt->execute(['id_user' => $id_user]);
-
+                   
+            header("Location: index_admin.php"); 
             if ($stmt->rowCount() > 0) {
                 echo "L'utilisateur a été supprimé avec succès.";
             } else {

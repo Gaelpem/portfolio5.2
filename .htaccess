@@ -1,0 +1,27 @@
+# Configuration de base du serveur Apache
+#DirectoryIndex index.html index.php
+
+# Désactive l'affichage du contenu des répertoires de façon stricte
+#Options -Indexes
+#IndexIgnore *
+
+# Active le module de réécriture d'URL
+#RewriteEngine On
+
+# Redirection forcée vers HTTPS
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteCond %{HTTPS} !on
+#RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirection des URLs avec .php vers les URLs sans extension
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+#RewriteRule ^ %1 [R=301,L]
+
+# Traitement interne des URLs sans extension
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^(.*)$ $1.php [L]
+
+# Gestion des erreurs
+#ErrorDocument 403 /403.php
+#ErrorDocument 404 /404.php

@@ -56,4 +56,3 @@ $stmt_checker->execute([
 }else{
     echo  "Aucun utilisateur trouvé"; 
 }
-

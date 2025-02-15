@@ -552,24 +552,6 @@ font-weight: var(--font-weight);
       font-weight:200;
   }
 
-
-
-
-table, th, td{
-    border-collapse: collapse;
-    border: 1px solid black; 
-}
-
-
-table{
-    margin-bottom: 2rem;
-}
-td{
-   padding: 1rem;
-}
-
-
-
 /* -----MENU-------- */
 .portfolio-section .menu{
     padding:2rem;
@@ -822,9 +804,10 @@ footer .social-lieu-copyright .social{
     /* Section Header */
     main{
         min-height: 20vh;
+        display: block;
     }
     section{
-        margin-bottom:4rem;
+        margin-bottom:2rem;
     }
     section h1::after,
     section h1::before {
@@ -851,7 +834,11 @@ footer .social-lieu-copyright .social{
     #heure{
         display: none;
     }
-
+    .links-block{
+       
+   
+    }
+    
 }
 
 @media screen and (max-width: 830px) {
@@ -1192,8 +1179,14 @@ footer.nuit{
 @media screen and (max-width: 1024px) {
    .btn-class.light.btn-class {
         right: 2rem;
-
     }
+
+
+.links-block li a:hover{
+    transform: scale(1.5) translateX(50px);
+
+}
+
 }
 
 /* Mobile styles */

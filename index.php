@@ -116,9 +116,9 @@ require_once 'inc/header.php'
 
  <!--Menu-->
 <section class="portfolio-section menu">
-<h1 class="menu-titre">[Men-u]<span class="numero">(04)</span></h1> 
 
-      <ul class="links-block">
+    <ul class="links-block">
+      <h1 class="menu-titre">[Men-u]<span class="numero">(04)</span></h1> 
 
                     <li><a href="#accueil-menu">Accueil<span class="numero">(01)</span></a></li>
                     <li><a href="#projet-menu">Projets<span class="numero">(02)</span></a></li>

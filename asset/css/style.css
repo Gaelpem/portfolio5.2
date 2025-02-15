@@ -95,7 +95,6 @@ header{
     width: 100%;
 }
 
-
 .nuit.navbar.logo {
     width: 5%;
 }
@@ -265,7 +264,7 @@ section h1:before{
 
   .portfolio-section  .projet-container{
     margin-top: 2.9rem;
-   /* border: 1px solid red; */
+
    }
     
  
@@ -793,9 +792,6 @@ footer .social-lieu-copyright .social{
     .detail{
         display: none;
         }
-
-      
-    
   }
   
 /*---Responsive section h1 ----*/
@@ -807,7 +803,7 @@ footer .social-lieu-copyright .social{
         display: block;
     }
     section{
-        margin-bottom:2rem;
+        margin-bottom:4rem;
     }
     section h1::after,
     section h1::before {
@@ -834,10 +830,7 @@ footer .social-lieu-copyright .social{
     #heure{
         display: none;
     }
-    .links-block{
-       
-   
-    }
+
     
 }
 
@@ -1195,4 +1188,8 @@ footer.nuit{
         right: 1rem;
         top: 4rem;
     }
+    .projet{
+        margin-top: 8.5rem;
+       }
+     
 }

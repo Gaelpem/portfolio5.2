@@ -51,7 +51,7 @@ require_once 'inc/header.php'
    
  <article id="photos">
  <i class="fa-solid fa-arrow-down" id="fleche1"></i>
-  <h2 class="portfolio"><a href="projet/projet-photo.php">1/ Portfolio Photos</a></h2>
+  <h2 class="portfolio"><a href="projet/projet-photo.php">1—— Portfolio Photos</a></h2>
 
          <div id="separateur1">
             <div id="paragraphe1">
@@ -65,7 +65,7 @@ require_once 'inc/header.php'
     
 <article id="biographie">
 <i class="fa-solid fa-arrow-down" id="fleche2"></i>
-   <h2 class="portfolio"><a href="projet/projet-biographie.php">2/ Biographie</a></h2>
+   <h2 class="portfolio"><a href="projet/projet-biographie.php">2—— Biographie</a></h2>
 
       <div id="separateur2">
          <div id="paragraphe2">

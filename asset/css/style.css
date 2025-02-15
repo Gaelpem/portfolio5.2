@@ -158,7 +158,6 @@ section h1:before{
     margin-top: -6rem;
     display: flex;
     flex-direction: column;
-   
 }
 
 .home .home-container{
@@ -274,7 +273,6 @@ section h1:before{
     border-bottom: 0.5px solid   rgba(0, 0, 0, 0.27); 
     max-width:100%; 
     padding: 2rem 0;
-
     cursor: pointer;
     position: relative;
    
@@ -358,7 +356,7 @@ section h1:before{
 
 #paragraphe1,#paragraphe2{
     display: none;
-    width: 400px;
+    width:400px;   
 }
 
 

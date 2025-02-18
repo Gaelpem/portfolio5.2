@@ -7,7 +7,7 @@
     --fontSize:8rem; 
     --color:black;
     --font-weight-principal:500; 
-    ---font-family:"Inter", sans-serif;;
+    ---font-family:"Inter", sans-serif;
 }
 
 html { -webkit-text-size-adjust: 100%;
@@ -874,7 +874,7 @@ footer .social-lieu-copyright .social{
 
     .skills-grid {
         width: 80%;
-        flex-wrap: wrap;
+        flex-wrap: wrap;    
         gap: 0.5rem;
     }
 

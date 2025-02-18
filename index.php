@@ -20,7 +20,7 @@ require_once 'inc/header.php'
 
     <div class="home-container">
             <p class="paragraphe1" id="accueil-menu">
-            Je m’appelle Gaël Pembele je suis développeur passionné par la ––––– technologie le design c'est pourquoi j'ai choisi de combiner ces deux univers.
+            Je m’appelle Gaël Pembele / je suis développeur passionné par la ––––– technologie, le design, c'est pourquoi j'ai choisi de combiner ces deux univers.
             <span class="detail">&copy2025 <br>
             basé à Paris/
             </span></p>
@@ -65,7 +65,7 @@ require_once 'inc/header.php'
     
 <article id="biographie">
 <i class="fa-solid fa-arrow-down" id="fleche2"></i>
-   <h2 class="portfolio"><a href="projet/projet-biographie.php">2—— Biographie</a></h2>
+   <h2 class="portfolio"><a href="projet/projet-biographie.php">2—— Henri Cartier-Bresson</a></h2>
 
       <div id="separateur2">
          <div id="paragraphe2">

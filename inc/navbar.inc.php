@@ -1,10 +1,14 @@
+<?php
+// Détecter si le fichier est accédé directement ou inclus
+$logoPath = '/portfolio5.2/asset/img/logo.svg';
+?>
 <header>
     <!-- Navigation principale -->
     <nav class="navbar">
         <!-- Lien vers Accueil -->
         <!-- Logo -->
         <div class="logo">
-            <img src="asset/img/logo.svg" alt="Logo de mon site">
+            <img src="<?php echo $logoPath; ?>" alt="Logo de mon site">
         </div>
 
         <!-- Liens de navigation -->
@@ -34,4 +38,3 @@
         
     </div>
 </header>
-</script>

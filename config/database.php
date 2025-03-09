@@ -1,9 +1,9 @@
 <?php
 
-const DB_HOST = 'localhost';
-const DB_NAME = 'portfolio2';
-const DB_USER = 'root';
-const DB_PASS = 'root'; 
+const DB_HOST = 'vivaldi.o2switch.net';
+const DB_NAME = 'pega5739_zippette';
+const DB_USER = 'pega5739';
+const DB_PASS = '3CFq-CdPH-vWC{'; 
 
 try {
     $pdo = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);

@@ -8,7 +8,7 @@ $logoPath = '/portfolio5.2/asset/img/logo.svg';
         <!-- Lien vers Accueil -->
         <!-- Logo -->
         <div class="logo">
-            <img src="<?php echo $logoPath; ?>" alt="Logo de mon site">
+            <img src="asset/img/logo.svg>>" alt="Logo de mon site">
         </div>
 
         <!-- Liens de navigation -->

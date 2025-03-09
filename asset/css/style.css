@@ -34,7 +34,6 @@ header {
     align-items: center;
     z-index: 10;
     max-width: 100%;
-    border: 1px solid black;
     box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
 }
 
@@ -49,7 +48,6 @@ header {
     height: 80px;
     top: 0;
     z-index: 10;
-    border: 1px solid black;
 }
 
  li {
@@ -333,14 +331,14 @@ section h1:before{
     gap: 1rem;
 }
 .projet-container article{
-    position: relative;                  >>>>>>>>>>>
+    position: relative;               
 }
 
 
 .carre1,.carre2{
     display: none;
     background-color: rgb(7, 7, 7);
-    width:80%;
+    width:50%;
     height:200px;
     border-radius:  7px;
     
@@ -575,9 +573,6 @@ flex-direction: column;
 
 }
 
-
-
-
 .numero{
     position: absolute;
     font-size:1rem;  
@@ -595,7 +590,18 @@ flex-direction: column;
         margin: 0;
         width: 450px;
     }
-
+@media  (max-width: 1600px){
+    #heure {
+        position: relative;
+        bottom: 20px;
+        left: 1200px;
+        font-size: 49px;
+        border-left:1px solid black; 
+        padding: 10px 0 10px 8px;
+        margin: 0;
+        width: 450px;
+    }
+}
 
 /* Footer */    
 

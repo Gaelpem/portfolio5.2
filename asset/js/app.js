@@ -230,3 +230,6 @@ btnMode.addEventListener('click', () => {
         btnMode.textContent = "––jour";
     }
 });
+
+
+

@@ -1,7 +1,4 @@
-<?php
-// Détecter si le fichier est accédé directement ou inclus
-$logoPath = '/portfolio5.2/asset/img/logo.svg';
-?>
+
 <header>
     <!-- Navigation principale -->
     <nav class="navbar">
@@ -12,12 +9,16 @@ $logoPath = '/portfolio5.2/asset/img/logo.svg';
         </div>
 
         <!-- Liens de navigation -->
-        <ul class="nav-links">
-        <li><a href="#accueil-menu" aria-label="Retour à l'accueil">accueil,</a></li>
-            <li><a href="#projet-menu" aria-label="Voir mes projets">projets,</a></li>
-            <li><a href="#projet-about" aria-label="À propos de moi">à propos,</a></li>
-            <li><a href="#contact-menu" aria-label="Contactez-moi">contact</a></li>
-        </ul>
+        <div class="link_mode">
+     
+            <ul class="nav-links">
+            <li><a href="#accueil-menu" aria-label="Retour à l'accueil">accueil,</a></li>
+                <li><a href="#projet-menu" aria-label="Voir mes projets">projets,</a></li>
+                <li><a href="#projet-about" aria-label="À propos de moi">à propos,</a></li>
+                <li><a href="#contact-menu" aria-label="Contactez-moi">contact</a></li>
+           </ul>
+           <span id="btn-mode" class="btn-class">––jour</span>
+       </div>
         <div class="burger-menu-button">
             <p class="menu">menu</p>
            </div>

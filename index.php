@@ -13,8 +13,6 @@ require_once 'inc/header.php'
  <!-- Presentation-->
 
 <main>
-<span id="btn-mode" class="btn-class">––jour</span>
-
 <section class="portfolio-section home">
 
 
@@ -118,19 +116,19 @@ require_once 'inc/header.php'
 <section class="portfolio-section menu">
 
     <ul class="links-block">
-      <h1 class="menu-titre">[Men-u]<span class="numero">(04)</span></h1> 
+      <h2 class="menu-titre">[Men-u]<span class="numero">(04)</span></h2> 
 
                     <li><a href="#accueil-menu">Accueil<span class="numero">(01)</span></a></li>
                     <li><a href="#projet-menu">Projets<span class="numero">(02)</span></a></li>
                     <li><a href="#projet-about">À propos<span class="numero">(03)</span></a></li>
                     <li><a href="#contact-menu">Contact<span class="numero">(04)</span></a></li>
      </ul>
- 
-</section>
 
-<!--HEURE-->
+     <!--HEURE-->
 <div id="heure"></div>
 
+ 
+</section>
 
 </main>
 

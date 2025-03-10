@@ -106,9 +106,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
       <ul class="reseau">
         <li><a href="">pembelegael@gmail.com</a></li>
-        <li><a href="">linkedin</a></li>
-        <li><a href="">github</a></li>
-        <li><a href="">instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/ga%C3%ABl-pembele-70708631b/">linkedin</a></li>
+        <li><a href="https://github.com/Gaelpem?tab=repositories">github</a></li>
+        <li><a href="https://www.instagram.com/whvshinngtonn/">instagram</a></li>
      </ul>
      </div> 
 </section>

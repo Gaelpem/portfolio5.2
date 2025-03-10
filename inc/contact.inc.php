@@ -105,7 +105,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </form>
 
       <ul class="reseau">
-        <li><a href="">pembelegael@gmail.com</a></li>
+        <li><a href="mailto:pembelegael@gmail.com">pembelegael@gmail.com</a></li>
         <li><a href="https://www.linkedin.com/in/ga%C3%ABl-pembele-70708631b/">linkedin</a></li>
         <li><a href="https://github.com/Gaelpem?tab=repositories">github</a></li>
         <li><a href="https://www.instagram.com/whvshinngtonn/">instagram</a></li>

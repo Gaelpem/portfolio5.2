@@ -275,7 +275,7 @@ section h1:before{
    margin-top: 15rem;
   }
 
-  .portfolio-section  .projet-container{
+  .portfolio-section .projet-container{
     margin-top: 2.9rem;
     box-sizing: border-box;
     flex-wrap: wrap;
@@ -292,15 +292,15 @@ section h1:before{
     position: relative;
     opacity:1;
     transition: opacity 0.4s ease-in-out;
-   
+  }
+  
+  #photos h2, #biographie h2{
+    font-weight: 300;
   }
 
   .portfolio-section .projet-container #photos:hover{
     opacity: 0.5;
   }
-
-
-
 
   .portfolio-section .projet-container #biographie{
     border-top:  0.5px solid  rgba(0, 0, 0, 0.27);

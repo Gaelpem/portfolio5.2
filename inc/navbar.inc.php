@@ -5,7 +5,7 @@
         <!-- Lien vers Accueil -->
         <!-- Logo -->
         <div class="logo">
-            <img src="asset/img/logo.svg>>" alt="Logo de mon site">
+            <img src="asset/img/logo.svg" alt="Logo de mon site">
         </div>
 
         <!-- Liens de navigation -->

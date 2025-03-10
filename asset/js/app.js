@@ -96,7 +96,6 @@ const observer = new IntersectionObserver((entries)=>{
 
 
 observer.observe(document.querySelector('.home'))
-
 observer.observe(document.querySelector('.propos'))
 observer.observe(document.querySelector('.contact'))
 

@@ -48,31 +48,71 @@ require_once 'inc/header.php'
 <div class="projet-container">
    
  <article id="photos">
- <i class="fa-solid fa-arrow-down" id="fleche1"></i>
-  <h2 class="portfolio"><a href="projet-photo.php">1—— Portfolio Photos</a></h2>
 
-         <div id="separateur1">
-            <div id="paragraphe1">
-             Mon premier projet en VueJS m'a permis d'acquérir les fondamentaux, comme par exemple l'utilisation des templates, la gestion des données avec data et methods, ainsi que l'apprentissage des directives comme v-bind, v-for, et v-if.
-            </div>
-         <div class="carre1"></div>
+
+
+    <div class ="separer">   
+          
+       <div class="description"> 
+
+       <h2 class="portfolio">1—— Portfolio Photos</a></h2>
+
+
+            <p id="paragraphe1">
+            Ce projet personnel constitue ma première exploration de GSAP, me permettant d'expérimenter l'animation de texte tout en approfondissant ma maîtrise de JavaScript. Il m’a offert l’opportunité d’explorer diverses transitions et dynamiques visuelles afin d’apporter plus de fluidité et d'interactivité à l’interface. Par ailleurs, j’ai conçu l’ensemble du design sur Figma, veillant à allier esthétique et ergonomie.
+            </p>
+
+            <p class="stack">-Website | JS-GSAP</p>
+           
+            <ul class="link-photo">
+                <li class="bouton"><a href="https://gaelpem.github.io/portfolio-photo/" target="_blank" >.voir projet</a></li>
+            </ul>
+
+
+        </div>
+
+           <div class=item1>
+            <img src="asset/img/img1.jpg" alt="">
+           </div>
     </div>
 
  </article>
 
-    
-<article id="biographie">
-<i class="fa-solid fa-arrow-down" id="fleche2"></i>
-   <h2 class="portfolio"><a href="projet-biographie.php">2—— Henri Cartier-Bresson</a></h2>
 
-      <div id="separateur2">
-         <div id="paragraphe2">
-             Mon premier projet en VueJS m'a permis d'acquérir les fondamentaux, comme par exemple l'utilisation des templates, la gestion des données avec data et methods, ainsi que l'apprentissage des directives comme v-bind, v-for, et v-if.
-            </div>
-         <div class="carre2"></div>
 
-</div>
+
+
+<article id="youtube">
+
+<div class ="separer">   
+          
+          <div class="description"> 
+   
+          <h2 class="portfolio">2—— Projet Youtube</a></h2>
+   
+   
+               <p id="paragraphe1">
+               Dans le cadre d’un projet collaboratif, nous avions pour objectif de concevoir un site web destiné à promouvoir une chaîne YouTube. Ma mission consistait à réaliser la maquette du site et à développer une partie des fonctionnalités en JavaScript. Ce projet m’a permis de renforcer mes compétences en conception d’interface utilisateur tout en approfondissant ma compréhension du développement interactif. De plus, j’ai eu l’opportunité de découvrir et d’expérimenter Tailwind CSS, une technologie facilitant la mise en page et l'optimisation du design grâce à son approche utilitaire.
+               </p>
+   
+               <p class="stack">-Website | JS-Tailwind</p>
+              
+               <ul class="link-photo">
+                   <li class="bouton"><a href="https://gaelpem.github.io/Projet_youtube/" target="_blank" >.voir projet</a></li>
+               </ul>
+   
+   
+           </div>
+   
+              <div class=item1>
+               <img src="asset/img/youtube.jpg" alt="">
+              </div>
+       </div>
+   
+
+
 </article>
+
     
 </div>
 
@@ -101,7 +141,7 @@ require_once 'inc/header.php'
                 </div>
             </div>
             <ul class="cv">
-                <li class="bouton2"><a href="asset/cv/cvOF.pdf" target="_blank">.voir mon cv</a></li>
+                <li class="bouton2"><a href="asset/cv/cv.pdf" target="_blank">.voir mon cv</a></li>
       </ul>
         </div>
     </div>

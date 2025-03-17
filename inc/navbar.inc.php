@@ -17,7 +17,6 @@
                 <li><a href="#projet-about" aria-label="À propos de moi">à propos,</a></li>
                 <li><a href="#contact-menu" aria-label="Contactez-moi">contact</a></li>
            </ul>
-           <span id="btn-mode" class="btn-class">––jour</span>
        </div>
         <div class="burger-menu-button">
             <p class="menu">menu</p>

@@ -375,6 +375,7 @@ section h1:before{
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.060);
     min-height: 50vh;
+    margin-bottom: 3rem;
 }
 
 
@@ -392,6 +393,30 @@ section h1:before{
 
 
 
+
+  .portfolio-section .projet-container #biographie {
+    border: 0.5px solid rgba(0, 0, 0, 0.27); 
+    max-width: 100%; 
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.060);
+    min-height: 50vh;
+}
+
+
+.portfolio-section .projet-container #biographie:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.090);
+}
+#biographie h2{
+    font-weight: 300;
+  }
 
 
 

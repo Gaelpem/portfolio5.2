@@ -18,7 +18,7 @@ require_once 'inc/header.php'
 
     <div class="home-container">
             <p class="paragraphe1" id="accueil-menu">
-            Je m’appelle Gaël Pembele / je suis développeur passionné par la ––––– technologie, le design, c'est pourquoi j'ai choisi de combiner ces deux univers.
+            Je suis Gaël Pembele, développeur passionné par la technologie et le design. En recherche de stage, je souhaite allier ces deux univers pour créer des expériences numériques alliant esthétisme et performance.
             <span class="detail">&copy2025 <br>
             basé à Paris/
             </span></p>
@@ -72,15 +72,11 @@ require_once 'inc/header.php'
         </div>
 
            <div class=item1>
-            <img src="asset/img/img1.jpg" alt="">
+            <img src="asset/img/photos.jpg" alt="">
            </div>
     </div>
 
  </article>
-
-
-
-
 
 <article id="youtube">
 
@@ -113,10 +109,49 @@ require_once 'inc/header.php'
 
 </article>
 
+
+
+
+<article id="biographie">
+
+<div class ="separer">   
+          
+          <div class="description"> 
+   
+          <h2 class="portfolio">3—— Projet Biogarphie</a></h2>
+   
+   
+               <p id="paragraphe1">
+               J’ai réalisé mon premier projet avec Vue.js, un site web consacré à une mini biographie de Henri Cartier-Bresson. J’ai conçu la maquette sur Figma, puis développé plusieurs fonctionnalités interactives en JavaScript. Ce projet m’a permis de me familiariser avec Vue.js, d’approfondir mes compétences en développement front-end et en conception d’interfaces utilisateur. J’ai également utilisé GSAP pour intégrer des animations fluides et dynamiques, renforçant l’aspect interactif du site.
+               </p>
+   
+               <p class="stack">-Website | VuesJS-GSAP</p>
+              
+               <ul class="link-photo">
+                   <li class="bouton"><a href="https://biographie-nine.vercel.app/" target="_blank" >.voir projet</a></li>
+               </ul>
+   
+   
+           </div>
+   
+              <div class=item1>
+               <img src="asset/img/biographie.jpg" alt="">
+              </div>
+       </div>
+   
+
+
+</article>
+
+
     
 </div>
 
 </section>
+
+
+
+
 
  <!--A propos-->
 

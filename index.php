@@ -176,7 +176,7 @@ require_once 'inc/header.php'
                 </div>
             </div>
             <ul class="cv">
-                <li class="bouton2"><a href="asset/cv/cv.pdf" target="_blank">.voir mon cv</a></li>
+                <li class="bouton2"><a href="asset/cv/cv03.pdf" target="_blank">.voir mon cv</a></li>
       </ul>
         </div>
     </div>

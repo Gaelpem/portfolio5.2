@@ -46,37 +46,6 @@ require_once 'inc/header.php'
 
 
 <div class="projet-container">
-   
- <article id="photos">
-
-
-
-    <div class ="separer">   
-          
-       <div class="description"> 
-
-       <h2 class="portfolio">1—— Portfolio Photos</a></h2>
-
-
-            <p id="paragraphe1">
-            Ce projet personnel constitue ma première exploration de GSAP, me permettant d'expérimenter l'animation de texte tout en approfondissant ma maîtrise de JavaScript. Il m’a offert l’opportunité d’explorer diverses transitions et dynamiques visuelles afin d’apporter plus de fluidité et d'interactivité à l’interface. Par ailleurs, j’ai conçu l’ensemble du design sur Figma, veillant à allier esthétique et ergonomie.
-            </p>
-
-            <p class="stack">-Website | JS-GSAP</p>
-           
-            <ul class="link-photo">
-                <li class="bouton"><a href="https://gaelpem.github.io/portfolio-photo/" target="_blank" >.voir projet</a></li>
-            </ul>
-
-
-        </div>
-
-           <div class=item1>
-            <img src="asset/img/photos.jpg" alt="">
-           </div>
-    </div>
-
- </article>
 
 <article id="youtube">
 
@@ -84,7 +53,7 @@ require_once 'inc/header.php'
           
           <div class="description"> 
    
-          <h2 class="portfolio">2—— Projet Youtube</a></h2>
+          <h2 class="portfolio">1—— Projet Youtube</a></h2>
    
    
                <p id="paragraphe1">
@@ -109,48 +78,9 @@ require_once 'inc/header.php'
 
 </article>
 
-
-
-
-<article id="biographie">
-
-<div class ="separer">   
-          
-          <div class="description"> 
-   
-          <h2 class="portfolio">3—— Projet Biogarphie</a></h2>
-   
-   
-               <p id="paragraphe1">
-               J’ai réalisé mon premier projet avec Vue.js, un site web consacré à une mini biographie de Henri Cartier-Bresson. J’ai conçu la maquette sur Figma, puis développé plusieurs fonctionnalités interactives en JavaScript. Ce projet m’a permis de me familiariser avec Vue.js, d’approfondir mes compétences en développement front-end et en conception d’interfaces utilisateur. J’ai également utilisé GSAP pour intégrer des animations fluides et dynamiques, renforçant l’aspect interactif du site.
-               </p>
-   
-               <p class="stack">-Website | VuesJS-GSAP</p>
-              
-               <ul class="link-photo">
-                   <li class="bouton"><a href="https://biographie-nine.vercel.app/" target="_blank" >.voir projet</a></li>
-               </ul>
-   
-   
-           </div>
-   
-              <div class=item1>
-               <img src="asset/img/biographie.jpg" alt="">
-              </div>
-       </div>
-   
-
-
-</article>
-
-
-    
 </div>
 
 </section>
-
-
-
 
 
  <!--A propos-->
